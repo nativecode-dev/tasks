@@ -15,5 +15,6 @@
   }, {
     "name": "clean",
     "command": "rimraf lib"
-  }]
+  }],
+  "version": 0
 }
