@@ -1,0 +1,19 @@
+{
+  "tasks": [{
+    "name": "build",
+    "command": "@tsc --build src",
+    "options": {
+      "cwd": ".",
+      "env": {
+        "path": "./node_modules"
+      },
+      "requires": [
+        "clean"
+      ],
+      "shell": "/usr/bin/bash"
+    }
+  }, {
+    "name": "clean",
+    "command": "rimraf lib"
+  }]
+}
